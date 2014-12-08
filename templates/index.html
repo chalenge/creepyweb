@@ -4,28 +4,24 @@
     <title></title>
     
     <!-- link to css file -->
-    <link href="video-js.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="static/_css/style.css"/>
+    <link href="../static/_css/video-js.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/_css/style.css"/> -->
 
     <!-- link to javascript files -->
+    <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
     <script src="../static/_js/jquery-2.1.1.min.js"></script>
     <script src="../static/_js/script.js"></script>
     
   	<!-- video.js must be in the <head> for older IEs to work. -->
-	  <script src="video.js"></script>
+	<script src="../static/_js/video.js"></script>
 
 	
 </head>
 <body>
-  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
-      poster="http://video-js.zencoder.com/oceans-clip.png"
-      data-setup="{}">
-    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
-    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
-    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
-    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
-    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  <video id="creepy-video" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+      poster="http://video-js.zencoder.com/oceans-clip.png">
+    <!-- <source src="../static/_videos/v1-trees-ns.mp4" type='video/mp4' /> -->
   </video>
+  <!-- <button onclick="loadvid()"></button> -->
 </body>
 </html>
