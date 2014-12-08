@@ -1,0 +1,16 @@
+{
+    "name": "Creepy Web",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "An extension that monitors your web activity and shows its dreadful privacy implications on a TV screen.",
+    "content_scripts": [{
+        "js": [
+               "jquery-2.1.1.min.js",
+               "firebase.js",
+               "ext_script.js"
+              ],
+        "matches": ["<all_urls>"]
+    }]
+}
+
+
